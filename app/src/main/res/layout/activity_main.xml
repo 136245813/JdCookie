@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.yuanhang.jd.view.SimpleToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary" />
+
+    <WebView
+        android:layout_weight="1"
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/tv_jd_ck"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textIsSelectable="true"
+            android:text="登录成功后点击获取ck"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/bt_obtain_jd_ck"
+            android:text="获取ck"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/blink_text_grey"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_center"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toStartOf="@+id/tv_right"
+                android:layout_toLeftOf="@+id/tv_right"
+                android:layout_toEndOf="@+id/tv_left"
+                android:layout_toRightOf="@+id/tv_left"
+                android:background="@drawable/sp_bg_et_round_corner_white"
+                android:drawableStart="@mipmap/ic_search"
+                android:drawableLeft="@mipmap/ic_search"
+                android:drawablePadding="8dp"
+                android:inputType="text"
+                android:paddingLeft="16dp"
+                android:paddingTop="2dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="2dp"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:text="标题" />
+    </FrameLayout>
+
+</LinearLayout>
