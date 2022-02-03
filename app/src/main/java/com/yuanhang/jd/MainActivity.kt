@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     private var wv: WebView? = null
     private var tvJdCk: TextView? = null
-
     private var exitTime: Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
